@@ -5,7 +5,7 @@ let totalGeneral = 0,
 function solicitarDatosUsuario() {
     let nombre = prompt('Ingrese su nombre:');
     let apellido = prompt('Ingrese su apellido');
-    let genero = prompt('Ingrese una "F" para femenino, "M" para masculino o un "X" para otros').toLocaleLowerCase();
+    let genero = prompt('Ingrese una "F" para femenino, "M" para masculino o un "X" para otros').toLowerCase();
     let mensaje;
 
     let nombreCompleto = nombre + ' ' + apellido;
@@ -21,7 +21,7 @@ function solicitarDatosUsuario() {
             mensaje = 'Bienvenid@ ' + nombreCompleto + '!';
             break;
         default:
-            alert('No ha introducido en genero válido, en la próxima ocasión vuelva a intentarlo');
+            alert('No ha introducido un genero válido, en la próxima ocasión vuelva a intentarlo');
             break;
     }
 
@@ -34,8 +34,7 @@ function agregarProductos() {
     while (confirmacion) {
         introducirDatosProducto();
 
-        // Comprobar si el usuario desea agregar más productos
-        confirmacion = confirm('Desea agregar un producto a su carrito de compras?');
+        confirmacion = confirm('¿Desea agregar un producto a su carrito de compras?');
     }
 
     if (contadorProductos > 0) {
