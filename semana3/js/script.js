@@ -29,7 +29,7 @@ function solicitarDatosUsuario() {
 }
 
 function agregarProductos() {
-    let confirmacion = confirm('Desea agregar un producto a su carrito de compras?');
+    let confirmacion = confirm('¿Desea agregar un producto a su carrito de compras?');
 
     while (confirmacion) {
         introducirDatosProducto();

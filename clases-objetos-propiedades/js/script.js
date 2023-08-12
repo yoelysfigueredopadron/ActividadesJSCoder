@@ -1,8 +1,8 @@
 class Cliente {
-    static id = 0; // Propiedad estática
+    static id = 0; // propiedad estática
 
     constructor(nombre, direccion) {
-        this.id = ++Cliente.id; // Asignamos la propiedades estatica 'id' a la propiedad publica con el mismo nombre dentro del construtor de la clase cliente
+        this.id = ++Cliente.id; // asignamos la propiedades estática 'id' a la propiedad pública con el mismo nombre dentro del constructor de la clase cliente
 
         let email = ''; // propiedad privada
 
@@ -28,8 +28,8 @@ const cliente2 = new Cliente('Pedro', 'Av San Carlos 150');
 const cliente3 = new Cliente('Maria', 'Av Caseros 2255');
 
 // Acceso a las propiedades públicas del objeto cliente1
-console.log(cliente1.nombre);
-console.log(cliente1.direccion);
+console.log(cliente1.nombre); // Salida: Miguel
+console.log(cliente1.direccion); // Salida: Av San Juan 3000
 
 console.log(cliente1.email); // Salida: undefined (la propiedad privada no es accesible directamente)
 
@@ -40,9 +40,9 @@ console.log(cliente1.getEmail()); // Salida: 'cliente1@gmail.com'
 
 // Agregando propiedades de forma dinámica con el operador de punto o los corchetes
 cliente1.telefono = '22334567';
-cliente1['Actvio'] = true;
+cliente1['Activo'] = true;
 
-// Cada cliente tiene un id unico que fue incrementando su valor con el uso de la propieda estatica
-console.log(cliente1);
+// Cada cliente tiene un id unico que fue incrementando su valor con el uso de la propieda estática
+console.log(cliente1)
 console.log(cliente2);
 console.log(cliente3);
