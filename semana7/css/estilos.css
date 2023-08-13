@@ -42,11 +42,6 @@ body {
     color: black;
 }
 
-/* .barra-navegacion a.active {
-    background-color: #04aa6d;
-    color: white;
-} */
-
 .barra-navegacion .icon {
     display: none;
 }
